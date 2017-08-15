@@ -13,5 +13,10 @@
 
 <h1>MENU</h1>
 
+<a href="/app/menu/some_menu_point.do">I'm menu point push me!</a>
+
+<a href="/app/logout.do">Logout</a>
+
+
 </body>
 </html>
