@@ -8,14 +8,14 @@
 
 <h1>Hello LOGIN</h1><hr />
 
-<c:url value="/login" var="loginUrl"/>
+<c:url value="/login.do" var="loginUrl"/>
 <form action="${loginUrl}" method="post">
     <c:if test="${param.error != null}">
         <p>
             Invalid username and password.
         </p>
     </c:if>
-    <c:if test="${param.logout != null}">
+    <c:if test="${requestScope.logout != null}">
         <p>
             You have been logged out.
         </p>
