@@ -2,8 +2,8 @@
 
 CREATE TABLE users (
   id       SERIAL      NOT NULL,
-  username VARCHAR(20) NOT NULL,
-  password VARCHAR(20) NOT NULL,
+  username VARCHAR(20) UNIQUE NOT NULL,
+  password VARCHAR(20) UNIQUE NOT NULL,
   enabled  BOOLEAN     NOT NULL DEFAULT FALSE,
   PRIMARY KEY (username)
 );
