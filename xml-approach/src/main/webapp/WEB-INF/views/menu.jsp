@@ -1,24 +1,22 @@
 <%--
   Author: Pavel Ravvich.
-  Date: 17.08.17.
+  Date: 14.08.17.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
-    <style type="">
-        <%@include file="" %>
-    </style>
-    <script type="">
-        <%@include file="" %>
-    </script>
+    <title>Title</title>
+
 </head>
 <body>
-$END$
-<%-- <c:out value="${requestScope.serverAnswer}"/> 
-  <c:forEach var="user" items="${requestScope.allUsers}">
-      <li>Id: <c:out value="${user.id}"/></li>
-  </c:forEach>--%>
+
+<h1>MENU</h1>
+
+<%--<a href="/app/menu/some_menu_point">I'm menu point push me!</a>--%>
+
+<%--<a href="/app/logout">Logout</a>--%>
+
+
 </body>
 </html>
