@@ -20,17 +20,19 @@ import java.util.List;
 /**
  * Author : Pavel Ravvich.
  * Created : 16.08.17.
- * <p>
- * CustomAuthProvider
  */
 @Service("provider")
 public class CustomAuthProvider implements AuthenticationProvider {
 
-    @Autowired
-    private RoleRepository roleRepo;
+    private final RoleRepository roleRepo;
+
+    private final UserRepository userRepo;
 
     @Autowired
-    private UserRepository userRepo;
+    public CustomAuthProvider(RoleRepository roleRepo, UserRepository userRepo) {
+        this.roleRepo = roleRepo;
+        this.userRepo = userRepo;
+    }
 
     @Override
     @Transactional
